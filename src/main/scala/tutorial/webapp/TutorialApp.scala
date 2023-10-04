@@ -2,6 +2,10 @@ package tutorial.webapp
 
 import org.scalajs.dom
 import org.scalajs.dom.document
+import io.f1r3fly.metta2rho.compiler._
+import MeTTa2Rho._
+import CompilerWorldState._
+import StdMeTTalParserCaps._
 
 object TutorialApp {
   def main(args: Array[String]): Unit = {
@@ -28,6 +32,7 @@ object TutorialApp {
   }
 
   def addClickedMessage(): Unit = {
+    //MeTTa2Rho.ppSemantics("{5}").toString() 
     appendPar(document.body, "You clicked the button!")
   }
 }
