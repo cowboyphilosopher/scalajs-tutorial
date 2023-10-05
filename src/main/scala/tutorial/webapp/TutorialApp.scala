@@ -22,7 +22,9 @@ object TutorialApp {
     })
     document.body.appendChild(button)
 
-    appendPar(document.body, "Hello World")
+    val msg = getConvertedMessage("[{(+ 5 1)},{},{},{}]")
+
+    appendPar(document.body, msg)
   }
 
   def appendPar(targetNode: dom.Node, text: String): Unit = {
@@ -31,9 +33,15 @@ object TutorialApp {
     targetNode.appendChild(parNode)
   }
 
+  def getConvertedMessage(msg: String): String = {
+    //val res = MeTTa2Rho.ppSemantics("[{(+ 5 1)},{},{},{}]").toString() 
+    val res = msg + "abc"
+    return res
+  }
+
   def addClickedMessage(): Unit = {
-    val res = MeTTa2Rho.ppSemantics("[{(+ 5 1)},{},{},{}]").toString() 
-    dom.console.log(res)
-    appendPar(document.body, "You clicked the " + res)
+    //val res = MeTTa2Rho.ppSemantics("[{(+ 5 1)},{},{},{}]").toString() 
+    //dom.console.log(res)
+    appendPar(document.body, "You clicked the fhfhjghj")
   }
 }
