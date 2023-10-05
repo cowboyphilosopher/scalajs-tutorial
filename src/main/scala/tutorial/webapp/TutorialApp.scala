@@ -34,7 +34,7 @@ object TutorialApp {
   }
 
   def getConvertedMessage(msg: String): String = {
-    //val res = MeTTa2Rho.ppSemantics("[{(+ 5 1)},{},{},{}]").toString() 
+    //val res = MeTTa2Rho.ppSemantics(msg).toString() 
     val res = msg + "abc"
     return res
   }
@@ -42,6 +42,6 @@ object TutorialApp {
   def addClickedMessage(): Unit = {
     //val res = MeTTa2Rho.ppSemantics("[{(+ 5 1)},{},{},{}]").toString() 
     //dom.console.log(res)
-    appendPar(document.body, "You clicked the fhfhjghj")
+    appendPar(document.body, "You clicked the button")
   }
 }
