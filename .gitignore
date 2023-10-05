@@ -1,7 +1,15 @@
 # sbt target folders
 target/
+project/
+node_modules/
+package.json
+package-lock.json
 
 # eclipse project files
 /.settings
 /.classpath
 /.project
+/.bloop
+/.bsp
+/.metals
+/.vscode
