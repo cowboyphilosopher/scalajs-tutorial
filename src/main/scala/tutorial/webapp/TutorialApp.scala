@@ -32,7 +32,8 @@ object TutorialApp {
   }
 
   def addClickedMessage(): Unit = {
-    //MeTTa2Rho.ppSemantics("{5}").toString() 
-    appendPar(document.body, "You clicked the button!")
+    val res = MeTTa2Rho.ppSemantics("[{(+ 5 1)},{},{},{}]").toString() 
+    dom.console.log(res)
+    appendPar(document.body, "You clicked the " + res)
   }
 }
